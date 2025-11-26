@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Digital Services - Elevate Your Business</title>
+    <title>Digital Services - Complete Product Catalog</title>
     <style>
         * {
             margin: 0;
@@ -44,8 +44,8 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-bottom: 60px;
         }
 
@@ -54,10 +54,12 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 30px 25px;
             transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
             animation: fadeInUp 0.8s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .product-card:hover {
@@ -69,46 +71,49 @@
 
         .product-card h2 {
             color: white;
-            font-size: 1.8em;
-            margin-bottom: 15px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
             font-weight: 700;
+            line-height: 1.3;
         }
 
         .product-card .description {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.95em;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            min-height: 60px;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            min-height: 40px;
         }
 
         .price {
-            font-size: 2.5em;
+            font-size: 2.2em;
             color: #4ade80;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .price-label {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9em;
-            margin-bottom: 10px;
+            font-size: 0.85em;
+            margin-bottom: 8px;
         }
 
         .btn {
             width: 100%;
-            padding: 15px 30px;
+            padding: 12px 25px;
             background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
             color: white;
             border: none;
             border-radius: 10px;
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
             text-align: center;
+            margin-bottom: 15px;
         }
 
         .btn:hover {
@@ -121,17 +126,15 @@
         }
 
         .features {
-            font-size: 0.85em;
-            color: rgba(255, 255, 255, 0.8);
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.75);
+            margin-top: 10px;
         }
 
         .features li {
             list-style: none;
-            padding: 8px 0;
-            padding-left: 25px;
+            padding: 5px 0;
+            padding-left: 20px;
             position: relative;
         }
 
@@ -141,6 +144,7 @@
             left: 0;
             color: #4ade80;
             font-weight: bold;
+            font-size: 0.95em;
         }
 
         .legal {
@@ -163,16 +167,6 @@
             margin-bottom: 15px;
             line-height: 1.8;
             font-size: 0.95em;
-        }
-
-        .legal ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-
-        .legal li {
-            margin-bottom: 10px;
-            line-height: 1.6;
         }
 
         @keyframes fadeInDown {
@@ -201,11 +195,11 @@
             display: inline-block;
             background: rgba(74, 222, 128, 0.3);
             color: #4ade80;
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 20px;
-            font-size: 0.8em;
+            font-size: 0.75em;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         @media (max-width: 768px) {
@@ -218,7 +212,7 @@
             }
 
             .product-card {
-                padding: 30px 20px;
+                padding: 25px 20px;
             }
 
             .legal {
@@ -230,114 +224,242 @@
 <body>
     <div class="container">
         <header>
-            <h1>Digital Services Premium</h1>
-            <p>Elevate Your Business with Our Premium Solutions</p>
+            <h1>Digital Services Marketplace</h1>
+            <p>Exclusive Tools, Courses & Premium Systems</p>
         </header>
 
         <div class="products-grid">
-            <!-- Product 1: Complete AI Automation Suite -->
+            <!-- Instagram Growth Accelerator Kit - $17 -->
+            <div class="product-card">
+                <div class="badge">Starter</div>
+                <h2>Instagram Growth Accelerator Kit</h2>
+                <p class="description">Quick strategies for Instagram growth and engagement.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$17</div>
+                <a href="https://buy.stripe.com/9AQ4gE0mC3B23AYeUe" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- TikTok Viral Formula - $26 -->
+            <div class="product-card">
+                <div class="badge">Starter</div>
+                <h2>TikTok Viral Formula</h2>
+                <p class="description">Proven formulas for creating viral TikTok content.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$26</div>
+                <a href="https://buy.stripe.com/fZe1gEf9CrCJzA6e00" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- YouTube Monetization Masterclass - $37 -->
+            <div class="product-card">
+                <div class="badge">Beginner</div>
+                <h2>YouTube Monetization Masterclass</h2>
+                <p class="description">Complete guide to monetizing your YouTube channel.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$37</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUf" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- AI Payday Playbook - $47 -->
+            <div class="product-card">
+                <div class="badge">Beginner</div>
+                <h2>AI Payday Playbook — 2025</h2>
+                <p class="description">Fast-track your path to AI-driven income generation.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$47</div>
+                <a href="https://buy.stripe.com/14k0154K0bJKbWw14" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Email Marketing Profit System - $47 -->
+            <div class="product-card">
+                <div class="badge">Beginner</div>
+                <h2>Email Marketing Profit System</h2>
+                <p class="description">Build profitable email marketing campaigns from scratch.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$47</div>
+                <a href="https://buy.stripe.com/3cs00i0mC3B23AYeUg" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Instagram Growth PRO Upgrade - $47 -->
+            <div class="product-card">
+                <div class="badge">Beginner</div>
+                <h2>Instagram Growth PRO Upgrade</h2>
+                <p class="description">Advanced strategies for Instagram monetization.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$47</div>
+                <a href="https://buy.stripe.com/14k0154K0bJKbWw14h" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- AI Content Creation Toolkit - $57 -->
+            <div class="product-card">
+                <div class="badge">Professional</div>
+                <h2>AI Content Creation Toolkit</h2>
+                <p class="description">Complete AI-powered content creation system for any niche.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$57</div>
+                <a href="https://buy.stripe.com/3cs0168i0mC3B23AYeUj" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- AI PowerStack Bundle - $67 -->
+            <div class="product-card">
+                <div class="badge">Professional</div>
+                <h2>AI PowerStack - Ultimate Bundle</h2>
+                <p class="description">Ultimate productivity and money tools bundle.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$67</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUk" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- TikTok Creator Pro Package - $67 -->
+            <div class="product-card">
+                <div class="badge">Professional</div>
+                <h2>TikTok Creator Pro Package</h2>
+                <p class="description">Professional strategies for TikTok monetization and growth.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$67</div>
+                <a href="https://buy.stripe.com/4gw0168i0mC3B23AYeUl" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- YouTube Channel Growth PRO - $441 -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>YouTube Channel Growth PRO</h2>
+                <p class="description">Complete YouTube growth system and strategy package.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$441</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUm" class="btn">BUY NOW!</a>
+            </div>
+            <!-- AI Lead Automation System - $297 -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>AI Lead Automation System</h2>
+                <p class="description">Automated lead generation and management system.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$297</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUn" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- AI Business Automation Suite - $197 -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>AI Business Automation Suite</h2>
+                <p class="description">Complete business automation with AI integration.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$197</div>
+                <a href="https://buy.stripe.com/3cs00i0mC3B23AYeUo" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Complete AI Automation Suite - $497 -->
             <div class="product-card">
                 <div class="badge">Premium</div>
                 <h2>Complete AI Automation Suite</h2>
-                <p class="description">Comprehensive automation tools designed to streamline your entire workflow and maximize operational efficiency.</p>
-                <div class="price-label">Investment</div>
+                <p class="description">Comprehensive automation tools for workflow optimization.</p>
+                <div class="price-label">Price</div>
                 <div class="price">$497</div>
                 <a href="https://buy.stripe.com/4gw14h5Te7pAcA0aEF" class="btn">BUY NOW!</a>
-                <ul class="features">
-                    <li>Full AI automation toolkit</li>
-                    <li>24/7 support access</li>
-                    <li>Implementation guide</li>
-                    <li>Regular updates</li>
-                </ul>
             </div>
 
-            <!-- Product 2: Initiate Premium Bundle -->
-            <div class="product-card">
-                <div class="badge">Premium</div>
-                <h2>Initiate Premium Bundle</h2>
-                <p class="description">Advanced training program combining multiple expertise modules for complete professional development and system mastery.</p>
-                <div class="price-label">Investment</div>
-                <div class="price">$984</div>
-                <a href="https://buy.stripe.com/14k0154K0bJKbWw14f" class="btn">BUY NOW!</a>
-                <ul class="features">
-                    <li>3 advanced training modules</li>
-                    <li>Personal mentorship sessions</li>
-                    <li>Certification program</li>
-                    <li>Community access</li>
-                </ul>
-            </div>
-
-            <!-- Product 3: Instant Income Engines (Standard) -->
+            <!-- Instant Income Engines - $497 -->
             <div class="product-card">
                 <div class="badge">Premium</div>
                 <h2>Instant Income Engines</h2>
-                <p class="description">Proven revenue generation systems that activate immediately, designed for rapid business scaling and income multiplication.</p>
-                <div class="price-label">Investment</div>
+                <p class="description">Proven revenue generation systems that activate immediately.</p>
+                <div class="price-label">Price</div>
                 <div class="price">$497</div>
                 <a href="https://buy.stripe.com/14k0154K0bJKbWw14f" class="btn">BUY NOW!</a>
-                <ul class="features">
-                    <li>Quick-start system</li>
-                    <li>Revenue templates</li>
-                    <li>Implementation support</li>
-                    <li>Bonus resources</li>
-                </ul>
             </div>
 
-            <!-- Product 4: Instant Income Engines Premium -->
+            <!-- Instant Income Engines Premium - $576 -->
             <div class="product-card">
                 <div class="badge">Premium+</div>
                 <h2>Instant Income Engines™</h2>
-                <p class="description">Advanced revenue generation platform with premium features, enhanced support, and accelerated implementation roadmap for maximum ROI.</p>
-                <div class="price-label">Investment</div>
+                <p class="description">Advanced revenue platform with premium features and support.</p>
+                <div class="price-label">Price</div>
                 <div class="price">$576</div>
                 <a href="https://buy.stripe.com/fZe00i0mC3B23AYeUb" class="btn">BUY NOW!</a>
-                <ul class="features">
-                    <li>Premium system features</li>
-                    <li>Priority support tier</li>
-                    <li>Advanced analytics</li>
-                    <li>Quarterly consultations</li>
-                </ul>
             </div>
 
-            <!-- Product 5: Viral Cash Content Kit -->
+            <!-- ELYSIAN Initiate Bundle - $984 -->
+            <div class="product-card">
+                <div class="badge">Elite</div>
+                <h2>Premium Mastery Initiate Bundle</h2>
+                <p class="description">Advanced training with 3 modules and personal mentorship.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$984</div>
+                <a href="https://buy.stripe.com/14k0154K0bJKbWw14g" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Viral Cash Content Kit - $1,776 -->
             <div class="product-card">
                 <div class="badge">Elite</div>
                 <h2>Viral Cash Content Kit</h2>
-                <p class="description">Complete content creation ecosystem with viral strategies, copywriting formulas, and monetization templates for exponential reach and revenue growth.</p>
-                <div class="price-label">Investment</div>
+                <p class="description">Complete content ecosystem with viral strategies and monetization.</p>
+                <div class="price-label">Price</div>
                 <div class="price">$1,776</div>
                 <a href="https://buy.stripe.com/7sI8yC9SA8q25GO00c" class="btn">BUY NOW!</a>
-                <ul class="features">
-                    <li>Complete content library</li>
-                    <li>Viral strategy frameworks</li>
-                    <li>Email templates</li>
-                    <li>1-on-1 strategy sessions</li>
-                </ul>
             </div>
+
+            <!-- Digital Marketing Accelerator - $1,997 -->
+            <div class="product-card">
+                <div class="badge">Elite</div>
+                <h2>Digital Marketing Accelerator</h2>
+                <p class="description">Advanced digital marketing system for rapid business growth.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$1,997</div>
+                <a href="https://buy.stripe.com/3cs00i0mC3B23AYeUp" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Sales Conversion Blueprint - $2,997 -->
+            <div class="product-card">
+                <div class="badge">Elite</div>
+                <h2>Sales Conversion Blueprint</h2>
+                <p class="description">Complete sales system for converting leads to revenue.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$2,997</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUq" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Premium Business Mastery Course - $4,997 -->
+            <div class="product-card">
+                <div class="badge">Premium Master</div>
+                <h2>Premium Business Mastery Course</h2>
+                <p class="description">Complete business mastery program for serious entrepreneurs.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$4,997</div>
+                <a href="https://buy.stripe.com/3cs00i0mC3B23AYeUr" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Elite Consulting Package - $7,997 -->
+            <div class="product-card">
+                <div class="badge">Elite Master</div>
+                <h2>Elite Consulting Package</h2>
+                <p class="description">Exclusive consulting and implementation support program.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$7,997</div>
+                <a href="https://buy.stripe.com/4gw00i0mC3B23AYeUs" class="btn">BUY NOW!</a>
+            </div>
+
+            <!-- Complete Business Automation System - $12,997 -->
+            <div class="product-card">
+                <div class="badge">Ultimate</div>
+                <h2>Complete Business Automation System</h2>
+                <p class="description">The ultimate all-in-one business automation and scaling system.</p>
+                <div class="price-label">Price</div>
+                <div class="price">$12,997</div>
+                <a href="https://buy.stripe.com/3cs00i0mC3B23AYeUt" class="btn">BUY NOW!</a>
+            </div>
+
         </div>
 
-        <!-- Legal & Compliance Section -->
         <div class="legal">
             <h2>Terms, Policies & Legal Compliance</h2>
-            
             <p><strong>Payment & Receipts:</strong> All purchases are processed through Stripe. Your payment receipt will be issued under the name "Digital Services" as shown in your Stripe email confirmation.</p>
-            
-            <p><strong>Digital Products:</strong> All products offered through Digital Services are digital in nature. Upon purchase, you will receive immediate access to your digital materials.</p>
-            
-            <p><strong>Refund Policy:</strong>
-            Digital Services products are provided as digital goods and services. Due to the immediate nature of digital delivery and access, all sales are generally final. However, if you experience any technical issues accessing your purchase within 24 hours of buying, please contact us for support. We stand behind the quality of our products and want to ensure your satisfaction.
-            </p>
-            
-            <p><strong>Your Rights:</strong> You have the right to use the purchased digital products for personal, professional, or business purposes as outlined in your product documentation. Resale, redistribution, or commercial licensing of these products without explicit permission is prohibited.</p>
-            
-            <p><strong>Support & Updates:</strong> Product updates, support materials, and additional resources are provided as part of your Digital Services purchase. Access to these materials may be available for 12 months from purchase date.</p>
-            
+            <p><strong>Digital Products:</strong> All products offered through Digital Services are digital in nature. Upon purchase, you will receive immediate access to your digital materials and resources.</p>
+            <p><strong>Refund Policy:</strong> Digital Services products are provided as digital goods and services. Due to the immediate nature of digital delivery and access, all sales are generally final. However, if you experience technical issues accessing your purchase within 24 hours of buying, please contact support for assistance. We stand behind the quality of our products and want to ensure your satisfaction.</p>
+            <p><strong>Your Rights:</strong> You have the right to use purchased digital products for personal, professional, or business purposes. Resale, redistribution, or commercial licensing without explicit permission is prohibited.</p>
+            <p><strong>Support & Updates:</strong> Product updates, support materials, and resources are provided as part of your purchase. Access to these materials may be available for 12 months from purchase date.</p>
             <p><strong>Disclaimer:</strong> Results from using Digital Services products vary based on individual effort, application, market conditions, and other factors beyond our control. We do not guarantee specific income results. These products are educational in nature and come with no warranty of financial return.</p>
-            
             <p><strong>Limitation of Liability:</strong> Digital Services and its products are provided "as-is" without warranties. We are not liable for any indirect, incidental, special, or consequential damages resulting from your use of our products.</p>
-            
             <p><strong>Contact & Support:</strong> For questions about your purchase, technical support, or concerns, please review the support documentation provided with your product purchase.</p>
-            
             <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;"><em>By making a purchase through this site, you agree to these terms and conditions. All transactions are processed securely through Stripe. Your satisfaction is our priority.</em></p>
         </div>
     </div>
