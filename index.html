@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Digital Services - Elevate Your Business</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px 30px;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .product-card h2 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .product-card .description {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            min-height: 60px;
+        }
+
+        .price {
+            font-size: 2.5em;
+            color: #4ade80;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .price-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .features {
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .features li {
+            list-style: none;
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        .legal {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            margin-top: 60px;
+        }
+
+        .legal h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .legal p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        .legal ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .legal li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(74, 222, 128, 0.3);
+            color: #4ade80;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .product-card {
+                padding: 30px 20px;
+            }
+
+            .legal {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Digital Services Premium</h1>
+            <p>Elevate Your Business with Our Premium Solutions</p>
+        </header>
+
+        <div class="products-grid">
+            <!-- Product 1: Complete AI Automation Suite -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>Complete AI Automation Suite</h2>
+                <p class="description">Comprehensive automation tools designed to streamline your entire workflow and maximize operational efficiency.</p>
+                <div class="price-label">Investment</div>
+                <div class="price">$497</div>
+                <a href="https://buy.stripe.com/4gw14h5Te7pAcA0aEF" class="btn">BUY NOW!</a>
+                <ul class="features">
+                    <li>Full AI automation toolkit</li>
+                    <li>24/7 support access</li>
+                    <li>Implementation guide</li>
+                    <li>Regular updates</li>
+                </ul>
+            </div>
+
+            <!-- Product 2: Initiate Premium Bundle -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>Initiate Premium Bundle</h2>
+                <p class="description">Advanced training program combining multiple expertise modules for complete professional development and system mastery.</p>
+                <div class="price-label">Investment</div>
+                <div class="price">$984</div>
+                <a href="https://buy.stripe.com/14k0154K0bJKbWw14f" class="btn">BUY NOW!</a>
+                <ul class="features">
+                    <li>3 advanced training modules</li>
+                    <li>Personal mentorship sessions</li>
+                    <li>Certification program</li>
+                    <li>Community access</li>
+                </ul>
+            </div>
+
+            <!-- Product 3: Instant Income Engines (Standard) -->
+            <div class="product-card">
+                <div class="badge">Premium</div>
+                <h2>Instant Income Engines</h2>
+                <p class="description">Proven revenue generation systems that activate immediately, designed for rapid business scaling and income multiplication.</p>
+                <div class="price-label">Investment</div>
+                <div class="price">$497</div>
+                <a href="https://buy.stripe.com/14k0154K0bJKbWw14f" class="btn">BUY NOW!</a>
+                <ul class="features">
+                    <li>Quick-start system</li>
+                    <li>Revenue templates</li>
+                    <li>Implementation support</li>
+                    <li>Bonus resources</li>
+                </ul>
+            </div>
+
+            <!-- Product 4: Instant Income Engines Premium -->
+            <div class="product-card">
+                <div class="badge">Premium+</div>
+                <h2>Instant Income Engines™</h2>
+                <p class="description">Advanced revenue generation platform with premium features, enhanced support, and accelerated implementation roadmap for maximum ROI.</p>
+                <div class="price-label">Investment</div>
+                <div class="price">$576</div>
+                <a href="https://buy.stripe.com/fZe00i0mC3B23AYeUb" class="btn">BUY NOW!</a>
+                <ul class="features">
+                    <li>Premium system features</li>
+                    <li>Priority support tier</li>
+                    <li>Advanced analytics</li>
+                    <li>Quarterly consultations</li>
+                </ul>
+            </div>
+
+            <!-- Product 5: Viral Cash Content Kit -->
+            <div class="product-card">
+                <div class="badge">Elite</div>
+                <h2>Viral Cash Content Kit</h2>
+                <p class="description">Complete content creation ecosystem with viral strategies, copywriting formulas, and monetization templates for exponential reach and revenue growth.</p>
+                <div class="price-label">Investment</div>
+                <div class="price">$1,776</div>
+                <a href="https://buy.stripe.com/7sI8yC9SA8q25GO00c" class="btn">BUY NOW!</a>
+                <ul class="features">
+                    <li>Complete content library</li>
+                    <li>Viral strategy frameworks</li>
+                    <li>Email templates</li>
+                    <li>1-on-1 strategy sessions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Legal & Compliance Section -->
+        <div class="legal">
+            <h2>Terms, Policies & Legal Compliance</h2>
+            
+            <p><strong>Payment & Receipts:</strong> All purchases are processed through Stripe. Your payment receipt will be issued under the name "Digital Services" as shown in your Stripe email confirmation.</p>
+            
+            <p><strong>Digital Products:</strong> All products offered through Digital Services are digital in nature. Upon purchase, you will receive immediate access to your digital materials.</p>
+            
+            <p><strong>Refund Policy:</strong>
+            Digital Services products are provided as digital goods and services. Due to the immediate nature of digital delivery and access, all sales are generally final. However, if you experience any technical issues accessing your purchase within 24 hours of buying, please contact us for support. We stand behind the quality of our products and want to ensure your satisfaction.
+            </p>
+            
+            <p><strong>Your Rights:</strong> You have the right to use the purchased digital products for personal, professional, or business purposes as outlined in your product documentation. Resale, redistribution, or commercial licensing of these products without explicit permission is prohibited.</p>
+            
+            <p><strong>Support & Updates:</strong> Product updates, support materials, and additional resources are provided as part of your Digital Services purchase. Access to these materials may be available for 12 months from purchase date.</p>
+            
+            <p><strong>Disclaimer:</strong> Results from using Digital Services products vary based on individual effort, application, market conditions, and other factors beyond our control. We do not guarantee specific income results. These products are educational in nature and come with no warranty of financial return.</p>
+            
+            <p><strong>Limitation of Liability:</strong> Digital Services and its products are provided "as-is" without warranties. We are not liable for any indirect, incidental, special, or consequential damages resulting from your use of our products.</p>
+            
+            <p><strong>Contact & Support:</strong> For questions about your purchase, technical support, or concerns, please review the support documentation provided with your product purchase.</p>
+            
+            <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;"><em>By making a purchase through this site, you agree to these terms and conditions. All transactions are processed securely through Stripe. Your satisfaction is our priority.</em></p>
+        </div>
+    </div>
+</body>
+</html>
